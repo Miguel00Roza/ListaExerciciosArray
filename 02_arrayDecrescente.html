@@ -7,11 +7,42 @@
     */
 
     //ENTRADA
-
-
+    const numero1 = Number(prompt("Insira o numero 1:"));
+    const numero2 = Number(prompt("Insira o numero 2:"));
+    const numero3 = Number(prompt("Insira o numero 3:"));
+    
     //PROCESSAMENTO
-
+    let lista = [];
+    if (numero1 > numero2 && numero1 > numero3) {
+        lista.push(numero1);
+        if (numero2 > numero3) {
+            lista.push(numero2);
+            lista.push(numero3);
+        } else {
+            lista.push(numero3);
+            lista.push(numero2);
+        }
+    } else if (numero2 > numero1 && numero2 > numero3) {
+        lista.push(numero2);
+        if (numero1 > numero3) {
+            lista.push(numero1);
+            lista.push(numero3);
+        } else {
+            lista.push(numero3);
+            lista.push(numero1);
+        }
+    } else if (numero3 > numero2 && numero3 > numero1) {
+        lista.push(numero3);
+        if (numero1 > numero2) {
+            lista.push(numero1);
+            lista.push(numero2);
+        } else {
+            lista.push(numero2);
+            lista.push(numero1);
+        }
+    }
+    
 
     //SAÍDA
-
+    alert(`${lista[0]} - ${lista[1]} - ${lista[2]}`);
 </script>

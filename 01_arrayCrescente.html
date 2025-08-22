@@ -7,11 +7,19 @@
     */
 
     //ENTRADA
-
-
+    const numero1 = Number(prompt("Insira o numero 1:"));
+    const numero2 = Number(prompt("Insira o numero 2:"));
+    
     //PROCESSAMENTO
-
+    let lista = [];
+    if (numero1 > numero2) {
+        lista.push(numero2);
+        lista.push(numero1);
+    } else {
+        lista.push(numero1);
+        lista.push(numero2);
+    }
 
     //SAÍDA
-
+    alert(`${lista[0]} - ${lista[1]}`);
 </script>

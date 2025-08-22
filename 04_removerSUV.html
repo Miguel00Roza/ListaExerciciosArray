@@ -9,11 +9,15 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const carroRemove = prompt("Qual carro você deseja remover? Ti-Tiggo, S-Sportage, Tu-Tucson, E-EcoSport").toLowerCase();
+    
 
     //PROCESSAMENTO
-
-
+    const carRem = (carroRemove === "ti") ? "Tiggo" : (carroRemove === "s") ? "Sportage" : (carroRemove === "tu") ? "Tucson" : (carroRemove === "e") ? "EcoSport" : alert("Invalido");
+    const indice = carrosSUV.indexOf(carRem);
+    let carrosSUVremoved = [carrosSUV];
+    carrosSUVremoved.pop(indice);
     //SAÍDA
-
+    alert(`lista antiga: ${carrosSUV}, lista nova: ${carrosSUVremoved}`)
 </script>
