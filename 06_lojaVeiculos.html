@@ -13,11 +13,48 @@
     */
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
+    const AddCar1 = prompt("Insira o nome do primeiro carro");
+    const TypeCar1 = prompt("Insira o tipo do primeiro carro: sedan, suv ou hatch").toLowerCase();
+    const AddCar2 = prompt("Insira o nome do segundo carro");
+    const TypeCar2 = prompt("Insira o tipo do segundo carro: sedan, suv ou hatch").toLowerCase();
+    const AddCar3 = prompt("Insira o nome do terceiro carro");
+    const TypeCar3 = prompt("Insira o tipo do terceiro carro: sedan, suv ou hatch").toLowerCase();
 
     //PROCESSAMENTO
-
+    if (TypeCar1 === "suv") {
+        carrosSUV.push(AddCar1);
+    } else if (TypeCar1 === "sedan") {
+        carrosSedan.push(AddCar1);
+    } else if (TypeCar1 === "hatch") {
+        carrosHatch.push(AddCar1);
+    } else {
+        alert("Carro 1 invalido");
+    }
+    if (TypeCar2 === "suv") {
+        carrosSUV.push(AddCar2);
+    } else if (TypeCar2 === "sedan") {
+        carrosSedan.push(AddCar2);
+    } else if (TypeCar2 === "hatch") {
+        carrosHatch.push(AddCar2);
+    } else {
+        alert("Carro 2 invalido");
+    }
+    if (TypeCar3 === "suv") {
+        carrosSUV.push(AddCar3);
+    } else if (TypeCar3 === "sedan") {
+        carrosSedan.push(AddCar3);
+    } else if (TypeCar3 === "hatch") {
+        carrosHatch.push(AddCar3);
+    } else {
+        alert("Carro 3 invalido");
+    }
 
     //SAÍDA
-
+    alert(`Lista SUV: ${carrosSUV}`)
+    alert(`Lista Sedan: ${carrosSedan}`)
+    alert(`Lista Hatch: ${carrosHatch}`)
 </script>

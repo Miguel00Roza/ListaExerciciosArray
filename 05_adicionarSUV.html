@@ -9,11 +9,14 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const carroAdd = prompt("Insira o nome do carro que deseja adicionar");   
 
     //PROCESSAMENTO
-
+    let ArrCarros = [...carrosSUV];
+    ArrCarros.push(carroAdd);
 
     //SAÍDA
-
+    alert(`Carros lista antiga: ${carrosSUV}`);
+    alert(`Carros lista nova: ${ArrCarros}`);
 </script>

@@ -16,8 +16,9 @@
     //PROCESSAMENTO
     const carRem = (carroRemove === "ti") ? "Tiggo" : (carroRemove === "s") ? "Sportage" : (carroRemove === "tu") ? "Tucson" : (carroRemove === "e") ? "EcoSport" : alert("Invalido");
     const indice = carrosSUV.indexOf(carRem);
-    let carrosSUVremoved = [carrosSUV];
-    carrosSUVremoved.pop(indice);
+    let carrosSUVremoved = [...carrosSUV];
+    carrosSUVremoved.splice(indice, 1);
     //SAÍDA
-    alert(`lista antiga: ${carrosSUV}, lista nova: ${carrosSUVremoved}`)
+    alert(`lista antiga: ${carrosSUV}`)
+    alert(`lista nova: ${carrosSUVremoved}`)
 </script>

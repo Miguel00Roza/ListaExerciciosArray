@@ -13,11 +13,15 @@
     */
 
     //ENTRADA
-
-
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const aposta = prompt("Insira o nome da cor que você deseja testar a sorte: Azul, Amarelo, Verde, Branco, Preto, Marrom, Cinza").toLowerCase();
     //PROCESSAMENTO
-
-
+    const indice = Math.floor(Math.random() * 7);
+    if (nomeCores[indice] === aposta) {
+        alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${aposta}!`)
+    } else {
+        alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!")
+    }
     //SAÍDA
 
 

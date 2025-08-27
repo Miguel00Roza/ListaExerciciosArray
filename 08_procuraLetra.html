@@ -9,10 +9,17 @@
     */
 
     //ENTRADA
-
+    const palavra = prompt("Insira uma palavra").toLowerCase(); 
+    const letra = prompt("Insira uma letra").toLowerCase();
 
     //PROCESSAMENTO
+    const indice = palavra.indexOf(letra);
 
+    if (indice !== -1) {
+        alert(`A letra ${letra} aparece na palavra ${palavra} na posição ${indice}`);
+    } else {
+        alert("A letra não aparece na palavra digitada");
+    }
 
     //SAÍDA
 
